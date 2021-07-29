@@ -106,9 +106,8 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  background-color: rgb(0, 0, 0, .2);
-  /* background: linear-gradient(90deg, #00b15e, #2d1763); */
+  width: 100%;
+  background: linear-gradient(90deg, #00b15e, #2d1763);
 }
 
 .navbar-brand {

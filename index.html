@@ -370,7 +370,7 @@
             <img src="icons/contact.svg" class="w-75 mailbox" alt="">
           </div>
           <div class="col-12 col-xl-6 col-xxl-7">
-            <form action="">
+            <form action="POST" data-netlify="true">
               <div class="form-group pt-sm-5 w-100 mx-auto">
                 <input data-aos="fade-left" data-aos-offset="355" class="form-control mb-3" type="text"
                   placeholder="Name" name="name" id="name" required>
@@ -379,6 +379,9 @@
                 <textarea data-aos="fade-left" data-aos-offset="245" data-aos-delay="350" class="form-control" name="message" id="message"
                   placeholder="Message..." cols="30" rows="12"
                   required></textarea>
+                  <div>
+                    <div class="py-2" data-netlify-recaptcha="true"></div>
+                  </div>
                 <div class="d-flex justify-content-end">
                   <div data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
                     class="w-100 pb-4 d-flex justify-content-center">
