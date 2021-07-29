@@ -106,8 +106,9 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background: linear-gradient(90deg, #00b15e, #2d1763);
+  width: 100vw;
+  background-color: rgb(0, 0, 0, .2);
+  /* background: linear-gradient(90deg, #00b15e, #2d1763); */
 }
 
 .navbar-brand {
@@ -331,7 +332,6 @@ h5 {
   background: linear-gradient(90deg, #e8fdf3, #f5f1ff);
 }
 
-
 input,
 textarea {
   box-shadow: none !important;
@@ -403,6 +403,7 @@ textarea:focus {
   animation: pulse 1000ms infinite;
 }
 
+/* ########################################################## */
 /* Animations */
 @-webkit-keyframes pulse {
   0% {
@@ -536,50 +537,8 @@ textarea:focus {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ######################################################### */
+/* ALL Media Queries */
 @media(min-width: 1400px) {
   .mailbox {
     padding-left: 80px;
@@ -594,6 +553,54 @@ textarea:focus {
 
 @media(max-width: 1399px) and (min-width: 1200px) {
 
+  #home h3 {
+    font-size: 35px;
+  }
+
+  #about {
+    padding-top: 5px !important;
+  }
+  #about .special-size{
+    padding-top: 0 !important;
+  }
+  #about .bg-icon {
+    padding: 20px !important;
+    width: 80px !important;
+  }
+  #about .icon-name {
+    font-size: 20px;
+  }
+  #about .icon-text {
+    font-size: 14px !important;
+  }
+  #about .with-tablet {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  .my-photo {
+    width: 250px;
+    height: 240px;
+  }
+  #about .text-name {
+    font-size: 28px;
+  }
+  .quote {
+    width: 90%;
+    font-size: 17px !important;
+    line-height: 30px;
+  }
+  .look {
+    width: 40%;
+  }
+
+  #skills .row {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  #skills .text-name {
+    padding-top: 0 !important;
+  }
+  
   .arrow-down {
     margin-top: 8vh;
   }
@@ -603,10 +610,6 @@ textarea:focus {
     position: relative;
     margin-left: auto !important;
     margin-right: auto !important;
-  }
-
-  .form-group {
-    width: 55% !important;
   }
 
   .contact-icons {
@@ -622,7 +625,7 @@ textarea:focus {
   }
 
   .form-group {
-    width: 85% !important;
+    width: 80% !important;
   }
 
   .up-icon-width {
@@ -660,7 +663,11 @@ textarea:focus {
   }
 
   .with-tablet {
+    margin-top: 0 !important;
     width: 75% !important;
+  }
+  .look {
+    width: 60%;
   }
 
   .w-5 {
@@ -685,8 +692,24 @@ textarea:focus {
     width: 96%;
     height: 91%;
   }
+  /* #contact {
+    padding-top: 100px;
+
+  } */
+
+   .contact-img {
+     text-align: center;
+     padding-top: 50px !important;
+     padding-bottom: 30px !important;
+   }
+
+   .mailbox {
+     width: 30% !important;
+     text-align: center;
+   }
 
   .form-group {
+    padding-bottom: 80px;
     width: 65% !important;
   }
 
@@ -701,7 +724,7 @@ textarea:focus {
   }
 }
 
-@media(max-width: 960px) and (min-width: 577px) {
+@media(max-width: 990px) and (min-width: 577px) {
 
   .header-text {
     padding-top: 5vh;
@@ -763,6 +786,16 @@ textarea:focus {
     height: 92%;
   }
 
+   .contact-img {
+     text-align: center;
+     padding-bottom: 0px !important;
+   }
+
+   .mailbox {
+     width: 30% !important;
+     text-align: center;
+   }
+
   .form-group {
     width: 65% !important;
   }
@@ -797,7 +830,7 @@ textarea:focus {
   }
 
   .header-text {
-    width: 70%;
+    width: 75%;
   }
 
   .arrow-down {
@@ -855,7 +888,7 @@ textarea:focus {
   }
 
   .project {
-    width: 340px !important;
+    width: 315px !important;
     position: relative;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -866,6 +899,14 @@ textarea:focus {
     height: 87%;
   }
 
+  .contact-img {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .mailbox {
+    width: 40% !important;
+    text-align: center;
+  }
   .form-group {
     width: 85% !important;
   }
@@ -880,10 +921,12 @@ textarea:focus {
     font-size: 12px !important;
   }
   .quote {
+    font-size: 17px !important;
     text-align: center;
-    line-height: 33px;
+    line-height: 27px;
   }
   .look {
+    margin-top: 15px;
     width: 100%;
   }
 }

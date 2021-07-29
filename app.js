@@ -17,7 +17,26 @@ const down = document.querySelector('.down-svg'),
   nav = document.querySelector('.navbar'),
   navHeight = nav.getBoundingClientRect().height,
   links = document.querySelectorAll('.nav-link'),
-  year = document.querySelector('.year');
+  year = document.querySelector('.year'),
+  dataAos = document.querySelectorAll('[data-aos]'),
+  dataAosDuration = document.querySelectorAll('[data-aos-duration]');
+
+
+const responsiveAnimation = function () {
+  dataAos.forEach((i) => {
+    i.removeAttribute('data-aos');
+    i.setAttribute('data-aos', 'zoom-in');
+  });
+}
+
+
+
+window.addEventListener('DOMContentLoaded', function() {
+  if (window.outerWidth < 992) {
+    responsiveAnimation();
+  }
+});
+
 
 // Show the current year in footer
 let today = new Date();
@@ -62,12 +81,6 @@ myLogo.addEventListener('click', () => {
   document.documentElement.scrollTop = 0;
 });
 
-
-// Scrolling changes nav-link's appears
-window.onscroll = function () {
-  scrollDetect();
-};
-
 // Smart ScrollDetection
 const scrollDetect = function () {
   if (document.body.scrollTop <= about.offsetTop - (navHeight + 50) || document.documentElement.scrollTop <= about.offsetTop - (navHeight + 50)) {
@@ -102,6 +115,12 @@ const scrollDetect = function () {
   }
 }
 
+// Scrolling changes nav-link's appears
+window.onscroll = function () {
+  scrollDetect();
+};
+
 if (window.location.reload) {
   scrollDetect();
 }
+
