@@ -35,6 +35,7 @@ links.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
     let id = e.target.getAttribute('href');
+    id = id.slice(1, id.length);
     let section = document.getElementById(id);
     showSection(section);
   })
@@ -57,7 +58,8 @@ up.addEventListener('click', () => {
 
 // Click MyLogo to Reload the Page
 myLogo.addEventListener('click', () => {
-  window.location.reload();
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 });
 
 
@@ -68,7 +70,7 @@ window.onscroll = function () {
 
 // Smart ScrollDetection
 const scrollDetect = function () {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+  if (document.body.scrollTop <= about.offsetTop - (navHeight + 50) || document.documentElement.scrollTop <= about.offsetTop - (navHeight + 50)) {
     links.forEach((link) => {
       link.classList.remove('active');
     });
@@ -101,6 +103,5 @@ const scrollDetect = function () {
 }
 
 if (window.location.reload) {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  scrollDetect();
 }
