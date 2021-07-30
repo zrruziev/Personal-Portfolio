@@ -19,6 +19,8 @@ const down = document.querySelector('.down-svg'),
   links = document.querySelectorAll('.nav-link'),
   year = document.querySelector('.year'),
   dataAos = document.querySelectorAll('[data-aos]'),
+  navbarToggler = document.querySelector('.navbar-toggler'),
+  navbarCollapse = document.querySelector('.navbar-collapse'),
   lookAtProjects = document.querySelector('.look'),
   headerImg = document.querySelector('.h-image');
 
@@ -35,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth > window.innerHeight) {
       headerImg.style.display = 'none';
     }
-    if(window.innerWidth < window.innerHeight) {
+    if (window.innerWidth < window.innerHeight) {
       responsiveAnimation();
     }
   }
@@ -61,6 +63,14 @@ links.forEach((link) => {
     id = id.slice(1, id.length);
     let section = document.getElementById(id);
     showSection(section);
+
+    // Close Hamburger Menu
+    let trueFalse = navbarToggler.getAttribute('aria-expanded');
+    if (trueFalse === "true") {
+      if (e.target.getAttribute('class').includes('nav-link')) {
+        navbarToggler.click();
+      }
+    }
   })
 })
 
