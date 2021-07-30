@@ -1,20 +1,22 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat',
+    sans-serif;
 }
 
 .quote {
   padding-bottom: 0;
   margin-bottom: 0;
   font-size: 18px !important;
-  line-height: 35px;
-  font-weight: 400;
+  line-height: 33px;
 }
-
+.icon-text {
+  font-size: 17px !important;
+}
 .look {
   display: inline;
   padding: 5px 10px 5px 5px;
-  transition: 1s ease-in;
+  transition: .1s ease-in;
 }
 
 .rarr {
@@ -123,35 +125,13 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-animation-name: moveInRight;
-  animation-name: moveInRight;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
 }
 
-.text-name-font {
-  font-weight: 400;
-}
-
-.from-right {
-  -webkit-animation-name: moveInLeft;
-  animation-name: moveInLeft;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-}
-
-.from-left {
-  -webkit-animation-name: moveInRight;
-  animation-name: moveInRight;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-}
-
-.from-center {
-  -webkit-animation-name: moveInCenter;
-  animation-name: moveInCenter;
-  -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
+.header-text-name {
+  background: linear-gradient(90deg, #00b158, #5a12a1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .from-top {
@@ -159,15 +139,8 @@ p {
   animation-name: moveInTop;
   -webkit-animation-timing-function: cubic-bezier(1, -1.22, .82, 1.84);
   animation-timing-function: cubic-bezier(1, -1.22, .82, 1.84);
-  -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
-}
-
-.from-bottom {
-  -webkit-animation-name: moveInBottom;
-  animation-name: moveInBottom;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2.6s;
+  animation-duration: 2.6s;
 }
 
 .nav-item {
@@ -195,6 +168,7 @@ h5 {
 }
 
 .active {
+
   border-bottom-color: white !important;
 }
 
@@ -205,6 +179,7 @@ h5 {
 }
 
 .header-text {
+  color: #414141;
   width: 90%;
 }
 
@@ -302,7 +277,6 @@ h5 {
 .display-4 {
   font-weight: 400;
 }
-
 
 .project:hover::after {
   visibility: visible;
@@ -435,102 +409,6 @@ textarea:focus {
   }
 }
 
-@-webkit-keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateYX(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateYX(0);
-  }
-}
-
-@-webkit-keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes moveInCenter {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1)
-  }
-}
-
-@keyframes moveInCenter {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 @-webkit-keyframes moveInTop {
   0% {
     opacity: 0;
@@ -553,7 +431,7 @@ textarea:focus {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} 
 
 /* ###################################################################### */
 /* ALL Media Queries */
@@ -607,8 +485,13 @@ textarea:focus {
     height: 240px;
   }
 
-  #about .text-name {
-    font-size: 28px;
+  .text-name {
+    font-size: 48px;
+  }
+
+  #about h1 {
+    font-size: 33px;
+
   }
 
   .quote {
