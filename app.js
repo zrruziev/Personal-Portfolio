@@ -29,9 +29,7 @@ const responsiveAnimation = function () {
   });
 }
 
-
-
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
   if (window.outerWidth < 992) {
     responsiveAnimation();
   }
@@ -81,11 +79,11 @@ myLogo.addEventListener('click', () => {
   document.documentElement.scrollTop = 0;
 });
 
-// Let's take a look Projects
+// Let's take a look at Projects
 lookAtProjects.addEventListener('click', () => {
-   window.scrollTo({
-     top: projects.offsetTop - navHeight
-   });
+  window.scrollTo({
+    top: projects.offsetTop - navHeight
+  });
 })
 
 // Smart ScrollDetection
@@ -130,4 +128,3 @@ window.onscroll = function () {
 if (window.location.reload) {
   scrollDetect();
 }
-

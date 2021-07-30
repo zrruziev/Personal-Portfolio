@@ -10,14 +10,17 @@
   line-height: 35px;
   font-weight: 400;
 }
+
 .look {
   display: inline;
   padding: 5px 10px 5px 5px;
-  transition: 1s ease-in ;
+  transition: 1s ease-in;
 }
+
 .rarr {
   font-size: 25px;
 }
+
 .look:hover {
   color: rgb(255, 255, 255);
   background-color: #8d6dff !important;
@@ -77,7 +80,7 @@ p {
 }
 
 .pale {
-  color: #ad6eff;
+  color: #8d6dff;
   text-shadow: 0px 0px 20px white;
 }
 
@@ -152,8 +155,11 @@ p {
 }
 
 .from-top {
+  -webkit-animation-name: moveInTop;
   animation-name: moveInTop;
+  -webkit-animation-timing-function: cubic-bezier(1, -1.22, .82, 1.84);
   animation-timing-function: cubic-bezier(1, -1.22, .82, 1.84);
+  -webkit-animation-duration: 2.5s;
   animation-duration: 2.5s;
 }
 
@@ -525,6 +531,18 @@ textarea:focus {
   }
 }
 
+@-webkit-keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes moveInTop {
   0% {
     opacity: 0;
@@ -537,7 +555,7 @@ textarea:focus {
   }
 }
 
-/* ######################################################### */
+/* ###################################################################### */
 /* ALL Media Queries */
 @media(min-width: 1400px) {
   .mailbox {
@@ -551,6 +569,7 @@ textarea:focus {
   }
 }
 
+/* ######################################################################### */
 @media(max-width: 1399px) and (min-width: 1200px) {
 
   #home h3 {
@@ -560,35 +579,44 @@ textarea:focus {
   #about {
     padding-top: 5px !important;
   }
-  #about .special-size{
+
+  #about .special-size {
     padding-top: 0 !important;
   }
+
   #about .bg-icon {
     padding: 20px !important;
     width: 80px !important;
   }
+
   #about .icon-name {
     font-size: 20px;
   }
+
   #about .icon-text {
     font-size: 14px !important;
   }
+
   #about .with-tablet {
     padding-top: 0 !important;
     margin-top: 0 !important;
   }
+
   .my-photo {
     width: 250px;
     height: 240px;
   }
+
   #about .text-name {
     font-size: 28px;
   }
+
   .quote {
     width: 90%;
     font-size: 17px !important;
     line-height: 30px;
   }
+
   .look {
     width: 40%;
   }
@@ -597,10 +625,11 @@ textarea:focus {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
   }
+
   #skills .text-name {
     padding-top: 0 !important;
   }
-  
+
   .arrow-down {
     margin-top: 8vh;
   }
@@ -633,6 +662,7 @@ textarea:focus {
   }
 }
 
+/* ########################################################################## */
 @media(max-width: 1199px) and (min-width: 991px) {
 
   .header-text {
@@ -666,6 +696,7 @@ textarea:focus {
     margin-top: 0 !important;
     width: 75% !important;
   }
+
   .look {
     width: 60%;
   }
@@ -692,21 +723,17 @@ textarea:focus {
     width: 96%;
     height: 91%;
   }
-  /* #contact {
-    padding-top: 100px;
 
-  } */
+  .contact-img {
+    text-align: center;
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+  }
 
-   .contact-img {
-     text-align: center;
-     padding-top: 50px !important;
-     padding-bottom: 30px !important;
-   }
-
-   .mailbox {
-     width: 30% !important;
-     text-align: center;
-   }
+  .mailbox {
+    width: 30% !important;
+    text-align: center;
+  }
 
   .form-group {
     padding-bottom: 80px;
@@ -724,6 +751,7 @@ textarea:focus {
   }
 }
 
+/* ############################################################################# */
 @media(max-width: 990px) and (min-width: 577px) {
 
   .header-text {
@@ -781,20 +809,21 @@ textarea:focus {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
   .project::after {
     width: 97%;
     height: 92%;
   }
 
-   .contact-img {
-     text-align: center;
-     padding-bottom: 0px !important;
-   }
+  .contact-img {
+    text-align: center;
+    padding-bottom: 0px !important;
+  }
 
-   .mailbox {
-     width: 30% !important;
-     text-align: center;
-   }
+  .mailbox {
+    width: 30% !important;
+    text-align: center;
+  }
 
   .form-group {
     width: 65% !important;
@@ -809,15 +838,18 @@ textarea:focus {
   .up-icon-width {
     width: 5%;
   }
+
   .quote {
     font-size: 17px;
     line-height: 33px;
   }
+
   .look {
     width: 60% !important;
   }
 }
 
+/* ########################################################## */
 /* Media Query for Phone */
 @media(max-width: 576px) {
 
@@ -903,10 +935,12 @@ textarea:focus {
     text-align: center;
     padding-bottom: 30px;
   }
+
   .mailbox {
     width: 40% !important;
     text-align: center;
   }
+
   .form-group {
     width: 85% !important;
   }
@@ -920,11 +954,14 @@ textarea:focus {
   .text {
     font-size: 12px !important;
   }
+
   .quote {
     font-size: 17px !important;
+    display: block;
     text-align: center;
     line-height: 27px;
   }
+
   .look {
     margin-top: 15px;
     width: 100%;
