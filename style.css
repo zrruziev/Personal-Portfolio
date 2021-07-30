@@ -11,15 +11,16 @@
   font-weight: 400;
 }
 .look {
-  width: 35%;
-  transition: .1s ease-in;
+  display: inline;
+  padding: 5px 10px 5px 5px;
+  transition: 1s ease-in ;
 }
 .rarr {
   font-size: 25px;
 }
 .look:hover {
-  color: white;
-  background-color: #977aff !important;
+  color: rgb(255, 255, 255);
+  background-color: #8d6dff !important;
   cursor: pointer;
 }
 

@@ -19,7 +19,7 @@ const down = document.querySelector('.down-svg'),
   links = document.querySelectorAll('.nav-link'),
   year = document.querySelector('.year'),
   dataAos = document.querySelectorAll('[data-aos]'),
-  dataAosDuration = document.querySelectorAll('[data-aos-duration]');
+  lookAtProjects = document.querySelector('.look');
 
 
 const responsiveAnimation = function () {
@@ -80,6 +80,13 @@ myLogo.addEventListener('click', () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+// Let's take a look Projects
+lookAtProjects.addEventListener('click', () => {
+   window.scrollTo({
+     top: projects.offsetTop - navHeight
+   });
+})
 
 // Smart ScrollDetection
 const scrollDetect = function () {
