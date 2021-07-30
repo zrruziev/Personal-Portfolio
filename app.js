@@ -25,17 +25,18 @@ const down = document.querySelector('.down-svg'),
 const responsiveAnimation = function () {
   dataAos.forEach((i) => {
     i.removeAttribute('data-aos');
-    i.setAttribute('data-aos', 'zoom-in');
+    i.removeAttribute('data-aos-delay');
+    i.removeAttribute('data-aos-duration');
   });
 }
 
 window.addEventListener('DOMContentLoaded', function () {
-  if (window.innerWidth < 992) {
-    responsiveAnimation();
-  }
   if (window.innerWidth < 1200) {
     if (window.innerWidth > window.innerHeight) {
       headerImg.style.display = 'none';
+    }
+    if(window.innerWidth < window.innerHeight) {
+      responsiveAnimation();
     }
   }
 });
