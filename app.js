@@ -19,8 +19,8 @@ const down = document.querySelector('.down-svg'),
   links = document.querySelectorAll('.nav-link'),
   year = document.querySelector('.year'),
   dataAos = document.querySelectorAll('[data-aos]'),
-  lookAtProjects = document.querySelector('.look');
-
+  lookAtProjects = document.querySelector('.look'),
+  headerImg = document.querySelector('.h-image');
 
 const responsiveAnimation = function () {
   dataAos.forEach((i) => {
@@ -30,8 +30,13 @@ const responsiveAnimation = function () {
 }
 
 window.addEventListener('DOMContentLoaded', function () {
-  if (window.outerWidth < 992) {
+  if (window.innerWidth < 992) {
     responsiveAnimation();
+  }
+  if (window.innerWidth < 1200) {
+    if (window.innerWidth > window.innerHeight) {
+      headerImg.style.display = 'none';
+    }
   }
 });
 
