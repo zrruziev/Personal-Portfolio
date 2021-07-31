@@ -230,9 +230,14 @@ h5 {
 .project {
   width: 400px;
   position: relative;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  filter: blur(0);
+  -webkit-filter: blur(0);
 }
 
 .project-btn {
+  padding: 2px 5px;
   background-color: #694ada;
   border: 1px solid #694ada;
   color: white;
@@ -684,6 +689,10 @@ textarea:focus {
     width: 75% !important;
   }
 
+  #about h1 {
+    font-size: 31px;
+  }
+
   .look {
     width: 60%;
   }
@@ -774,6 +783,10 @@ textarea:focus {
 
   .with-tablet {
     width: 100% !important;
+  }
+
+  #about h1 {
+    font-size: 31px;
   }
 
   .skills-responsive {
@@ -945,11 +958,11 @@ textarea:focus {
   .quote {
     font-size: 17px !important;
     display: block;
-    text-align: center;
     line-height: 27px;
   }
 
   .look {
+    text-align: center;
     margin-top: 15px;
     width: 100%;
   }

@@ -52,8 +52,7 @@ year.innerHTML = thisYear;
 // Catch and Show Section 
 const showSection = (sectionName) => {
   window.scrollTo({
-    top: sectionName.offsetTop - navHeight,
-    behavior: "smooth"
+    top: sectionName.offsetTop - navHeight
   });
 }
 
