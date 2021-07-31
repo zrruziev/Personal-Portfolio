@@ -4,6 +4,9 @@
     sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .quote {
   padding-bottom: 0;
   margin-bottom: 0;
