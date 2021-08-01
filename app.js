@@ -27,40 +27,43 @@ const down = document.querySelector('.down-svg'),
   seeAnyway = document.querySelector('.see-anyway'),
   root = document.getElementsByTagName('html')[0];
 
-  // Due to AOS-bugs, write some changes for Mobile
+// Due to AOS-bugs, write some changes for Mobile
 const responsiveAnimation = function () {
   dataAos.forEach((i) => {
-    if(i.getAttribute('data-aos') !== "fade-down") {
-      i.setAttribute('data-aos', 'zoom-in');
+
+    i.setAttribute('data-aos-offset', '100');
+
+    if (window.innerWidth < 1200) {
+      i.setAttribute('data-aos-offset', '50');
+      if (window.innerWidth > window.innerHeight) {
+        headerImg.style.display = 'none';
+      }
+      if (window.innerWidth < window.innerHeight) {
+        i.removeAttribute('data-aos-delay');
+        if (i.getAttribute('data-aos') !== "fade-down") {
+          i.setAttribute('data-aos', 'zoom-in');
+        }
+
+        // Show Preloader
+        setTimeout(() => {
+          root.classList.add('remove-scrolling');
+          document.body.classList.add('remove-scrolling');
+          desktop.style.display = 'block';
+        }, 0);
+
+        // Hide Preloader
+        setTimeout(() => {
+          root.classList.remove('remove-scrolling');
+          document.body.classList.remove('remove-scrolling');
+          desktop.style.display = 'none';
+        }, 1000);
+      }
     }
-    i.removeAttribute('data-aos-offset');
-    i.removeAttribute('data-aos-duration');
   });
 }
 
 window.addEventListener('DOMContentLoaded', function () {
-  if (window.innerWidth < 1200) {
-    if (window.innerWidth > window.innerHeight) {
-      headerImg.style.display = 'none';
-    }
-    if (window.innerWidth < window.innerHeight) {
-      responsiveAnimation();
-
-      // Show Preloader
-      setTimeout(() => {
-        root.classList.add('remove-scrolling');
-        document.body.classList.add('remove-scrolling');
-        desktop.style.display = 'block';
-      }, 0);
-
-    // Hide Preloader
-      setTimeout(() => {
-        root.classList.remove('remove-scrolling');
-        document.body.classList.remove('remove-scrolling');
-        desktop.style.display = 'none';
-      }, 1000);
-    }
-  }
+  responsiveAnimation();
 });
 
 // Show the current year in footer
