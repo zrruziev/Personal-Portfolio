@@ -39,11 +39,14 @@ const responsiveAnimation = function () {
         headerImg.style.display = 'none';
       }
       if (window.innerWidth < window.innerHeight) {
-        i.removeAttribute('data-aos-delay');
-        i.setAttribute('data-aos', 'zoom-in');
-        // if (i.getAttribute('data-aos') !== "fade-down") {
-        //   i.setAttribute('data-aos', 'zoom-in');
-        // }
+         if (i.getAttribute('data-aos') !== "fade-down") {
+           i.setAttribute('data-aos', 'zoom-in');
+         }
+        if (window.innerWidth < 576) {
+          //  i.removeAttribute('data-aos-delay');
+           i.setAttribute('data-aos', 'zoom-in');
+        }
+
 
         // Show Preloader
         setTimeout(() => {
