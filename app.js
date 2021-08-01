@@ -34,19 +34,20 @@ const responsiveAnimation = function () {
     i.setAttribute('data-aos-offset', '100');
 
     if (window.innerWidth < 1200) {
-      i.setAttribute('data-aos-offset', '50');
+      i.setAttribute('data-aos-offset', '40');
+
       if (window.innerWidth > window.innerHeight) {
         headerImg.style.display = 'none';
       }
-      if (window.innerWidth < window.innerHeight) {
-         if (i.getAttribute('data-aos') !== "fade-down") {
-           i.setAttribute('data-aos', 'zoom-in');
-         }
-        if (window.innerWidth < 576) {
-          //  i.removeAttribute('data-aos-delay');
-           i.setAttribute('data-aos', 'zoom-in');
-        }
 
+      if (window.innerWidth < window.innerHeight) {
+        if (window.innerWidth < 992) {
+          i.setAttribute('data-aos', 'zoom-in');
+
+          if (window.innerWidth < 576) {
+            i.removeAttribute('data-aos-delay');
+          }
+        }
 
         // Show Preloader
         setTimeout(() => {
