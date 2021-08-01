@@ -22,12 +22,18 @@ const down = document.querySelector('.down-svg'),
   navbarToggler = document.querySelector('.navbar-toggler'),
   navbarCollapse = document.querySelector('.navbar-collapse'),
   lookAtProjects = document.querySelector('.look'),
-  headerImg = document.querySelector('.h-image');
+  headerImg = document.querySelector('.h-image'),
+  desktop = document.querySelector('.desktop'),
+  seeAnyway = document.querySelector('.see-anyway'),
+  root = document.getElementsByTagName('html')[0];
 
+  // Due to AOS-bugs, write some changes for Mobile
 const responsiveAnimation = function () {
   dataAos.forEach((i) => {
-    i.removeAttribute('data-aos');
-    i.removeAttribute('data-aos-delay');
+    if(i.getAttribute('data-aos') !== "fade-down") {
+      i.setAttribute('data-aos', 'zoom-in');
+    }
+    i.removeAttribute('data-aos-offset');
     i.removeAttribute('data-aos-duration');
   });
 }
@@ -39,10 +45,23 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     if (window.innerWidth < window.innerHeight) {
       responsiveAnimation();
+
+      // Show Preloader
+      setTimeout(() => {
+        root.classList.add('remove-scrolling');
+        document.body.classList.add('remove-scrolling');
+        desktop.style.display = 'block';
+      }, 0);
+
+    // Hide Preloader
+      setTimeout(() => {
+        root.classList.remove('remove-scrolling');
+        document.body.classList.remove('remove-scrolling');
+        desktop.style.display = 'none';
+      }, 1000);
     }
   }
 });
-
 
 // Show the current year in footer
 let today = new Date();
@@ -128,7 +147,7 @@ const scrollDetect = function () {
     });
     navProjects.classList.add('active');
   }
-  if (document.body.scrollTop > contact.offsetTop - (navHeight + 50) || document.documentElement.scrollTop > contact.offsetTop - (navHeight + 50)) {
+  if (document.body.scrollTop > contact.offsetTop - (navHeight + 100) || document.documentElement.scrollTop > contact.offsetTop - (navHeight + 100)) {
     links.forEach((link) => {
       link.classList.remove('active');
     });
