@@ -40,9 +40,10 @@ const responsiveAnimation = function () {
       }
       if (window.innerWidth < window.innerHeight) {
         i.removeAttribute('data-aos-delay');
-        if (i.getAttribute('data-aos') !== "fade-down") {
-          i.setAttribute('data-aos', 'zoom-in');
-        }
+        i.setAttribute('data-aos', 'zoom-in');
+        // if (i.getAttribute('data-aos') !== "fade-down") {
+        //   i.setAttribute('data-aos', 'zoom-in');
+        // }
 
         // Show Preloader
         setTimeout(() => {
