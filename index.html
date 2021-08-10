@@ -1,446 +1,1025 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="zrruziev, zrrportfolio, Portfolio, Best Portfolio, Front-End Portfolio, Front-End Developer, Front-End, Html, Css, Javascript, Web Developer"
+    />
+    <meta
+      name="description"
+      content="Hi, I am Zukhriddin Ruziev. I am a Front-End Developer"
+    />
+    <meta name="author" content="Zukhriddin Ruziev" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Developer Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords"
-    content="zrruziev, zrrportfolio, Portfolio, Best Portfolio, Front-End Portfolio, Front-End Developer, Front-End, Html, Css, Javascript, Web Developer">
-  <meta name="description" content="Hi, I am Zukhriddin Ruziev. I am a Front-End Developer">
-  <meta name="author" content="Zukhriddin Ruziev">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="shortcut icon" href="favicon/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Web Developer Portfolio</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark py-3">
-    <div class="container">
-      <div class="w-100 d-flex justify-content-between">
-        <div data-aos="zoom-in" data-aos-duration="200">
-          <a class="navbar-brand m-0">
-            <img id="logo" class="w-50" src="img/zrr_logo.png" alt="logo"></a>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+      <div class="container">
+        <div class="w-100 d-flex justify-content-between">
+          <div data-aos="zoom-in" data-aos-duration="200">
+            <a class="navbar-brand m-0">
+              <img id="logo" class="w-50" src="img/zrr_logo.png" alt="logo"
+            /></a>
+          </div>
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
         </div>
-        <div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="w-100 d-lg-flex justify-content-end">
-          <ul class="navbar-nav mb-2 mb-md-0">
-            <li data-aos="fade-left" data-aos-delay="200" class="nav-item mx-lg-4 mx-auto">
-              <a class="nav-link p-0" id="nav-home" href="#home">HOME</a>
-            </li>
-            <li data-aos="fade-left" data-aos-delay="300" class="nav-item mx-lg-4 mx-auto">
-              <a class="nav-link p-0" id="nav-about" href="#about">ABOUT</a>
-            </li>
-            <li data-aos="fade-left" data-aos-delay="400" class="nav-item mx-lg-4 mx-auto">
-              <a class="nav-link p-0" id="nav-skills" href="#skills">SKILLS</a>
-            </li>
-            <li data-aos="fade-left" data-aos-delay="500" class="nav-item mx-lg-4 mx-auto">
-              <a class="nav-link p-0" id="nav-projects" href="#projects">PROJECTS</a>
-            </li>
-            <li data-aos="fade-left" data-aos-delay="600" class="nav-item mx-lg-4 mx-auto">
-              <a class="nav-link p-0" id="nav-contact" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <main>
-    <!-- Home -->
-    <section id="home">
-      <div class="d-xl-flex justify-content-center align-items-center header-phone py-lg-5 my-lg-5">
-        <div class="w-100 mx-auto mb-lg-5 pb-5 text-center">
-          <h3 data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000"
-            class="header-text mx-auto display-6  pb-3">Hello, I am<span class="header-text-name">
-              Zukhriddin Ruziev.</span><br>
-            I am a
-            Front-end Developer.
-          </h3>
-          <button data-aos="zoom-in" data-aos-delay="2300" data-aos-duration="800"
-            class="btn-home btn contact-me">Contact me</button>
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="1200" data-aos-duration="900" class="header-img w-100 m-0">
-          <div class="text-center h-image">
-            <img src="icons/profile.svg" class="w-75" alt="">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="w-100 d-lg-flex justify-content-end">
+            <ul class="navbar-nav mb-2 mb-md-0">
+              <li
+                data-aos="fade-left"
+                data-aos-delay="200"
+                class="nav-item mx-lg-4 mx-auto"
+              >
+                <a class="nav-link p-0" id="nav-home" href="#home">HOME</a>
+              </li>
+              <li
+                data-aos="fade-left"
+                data-aos-delay="300"
+                class="nav-item mx-lg-4 mx-auto"
+              >
+                <a class="nav-link p-0" id="nav-about" href="#about">ABOUT</a>
+              </li>
+              <li
+                data-aos="fade-left"
+                data-aos-delay="400"
+                class="nav-item mx-lg-4 mx-auto"
+              >
+                <a class="nav-link p-0" id="nav-skills" href="#skills"
+                  >SKILLS</a
+                >
+              </li>
+              <li
+                data-aos="fade-left"
+                data-aos-delay="500"
+                class="nav-item mx-lg-4 mx-auto"
+              >
+                <a class="nav-link p-0" id="nav-projects" href="#projects"
+                  >PROJECTS</a
+                >
+              </li>
+              <li
+                data-aos="fade-left"
+                data-aos-delay="600"
+                class="nav-item mx-lg-4 mx-auto"
+              >
+                <a class="nav-link p-0" id="nav-contact" href="#contact"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- Arrow-Down-Button -->
-      <div class="d-none d-md-block d-flex justify-content-center align-items-center w-100">
-        <div class="p-2 up-icon-width from-top rounded-circle down-btn arrow-up-position-ab">
-          <img src="icons/arrow-down.svg" class="down-svg w-100" alt="">
-        </div>
-      </div>
-    </section>
-    <!-- About -->
-    <section id="about" class="pt-1 pt-sm-5 pb-3">
-      <div class="container pb-0 pb-lg-5">
-        <h2 class="text-center text-dark display-4 mt-3"><span class="text-name">About</span></h2>
-        <hr class="w-25 mx-auto mt-0">
-        <div class="pt-0 pt-sm-4 special-size">
-          <div class="p-2">
-            <div class="row icons">
-              <div class="col-6 col-md-3 text-center services py-0 pt-3">
-                <img data-aos="zoom-in" data-aos-offset="148" src="icons/cellphone-link.svg"
-                  class="w-50 mb-2 bg-icon p-5 rounded-circle" alt="">
-                <div data-aos="fade" data-aos-offset="100">
-                  <h3 class="icon-name">Responsive</h3>
-                  <p class="w-100 icon-text text-dark mx-auto">My layouts will work on any device, big or small.
-                  </p>
-                </div>
-              </div>
-              <div class="col-6 col-md-3 text-center services py-0 pt-3">
-                <img data-aos="zoom-in" data-aos-offset="148" data-aos-delay="150"
-                  class="w-50 mb-2 bg-icon p-5 rounded-circle" src="icons/speedometer.svg" alt="">
-                <div data-aos="fade" data-aos-delay="200" data-aos-offset="100">
-                  <h3 class="icon-name">Fast Loading</h3>
-                  <p class="w-100 icon-text text-dark mx-auto">Fast
-                    load times and lag free interaction, my highest
-                    priority.
-                  </p>
-                </div>
-              </div>
-              <div class="col-6 col-md-3 text-center services py-0 pt-sm-3">
-                <img data-aos="zoom-in" data-aos-offset="148" data-aos-delay="300" src="icons/lightbulb-on-outline.svg"
-                  class="w-50 mb-2 bg-icon p-5 rounded-circle" alt="">
-                <div data-aos="fade" data-aos-offset="100" data-aos-delay="400">
-                  <h3 class="icon-name">Intuitive</h3>
-                  <p class="w-100 icon-text text-dark mx-auto">Strong preference for easy to use, intuitive UX/UI.
-                  </p>
-                </div>
-
-              </div>
-              <div class="col-6 col-md-3 text-center services py-0 pt-sm-3">
-                <img data-aos="zoom-in" data-aos-offset="148" data-aos-delay="450"
-                  class="w-50 mb-2 bg-icon p-5 rounded-circle" src="icons/rocket-launch-outline.svg" alt="">
-                <div data-aos="fade" data-aos-offset="100" data-aos-delay="600">
-                  <h3 class="icon-name">Dynamic</h3>
-                  <p class="w-100 icon-text text-dark mx-auto">Websites don't have to be static, I love making
-                    pages
-                    come to
-                    life.</p>
-                </div>
-              </div>
+    </nav>
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div
+          class="
+            d-xl-flex
+            justify-content-center
+            align-items-center
+            header-phone
+            py-lg-5
+            my-lg-5
+          "
+        >
+          <div class="w-100 mx-auto mb-lg-5 pb-5 text-center">
+            <h3
+              data-aos="fade-right"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+              class="header-text mx-auto display-6 pb-3"
+            >
+              Hello, I am<span class="header-text-name">
+                Zukhriddin Ruziev.</span
+              ><br />
+              I am a Front-end Developer.
+            </h3>
+            <button
+              data-aos="zoom-in"
+              data-aos-delay="2300"
+              data-aos-duration="800"
+              class="btn-home btn contact-me"
+            >
+              Contact me
+            </button>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="1200"
+            data-aos-duration="900"
+            class="header-img w-100 m-0"
+          >
+            <div class="text-center h-image">
+              <img src="icons/profile.svg" class="w-75" alt="" />
             </div>
           </div>
         </div>
-        <div class="row pt-3 pt-lg-4 mb-5">
-          <div class="col-12 col-md-6 col-xl-5 d-flex justify-content-end">
-            <div data-aos="zoom-in" data-aos-delay="800" data-aos-offset="290" class="my-photo ">
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-7">
-            <div class="pt-lg-3 mt-4 w-100 mx-auto pr-5 with-tablet">
-              <h1 data-aos="fade-left" data-aos-offset="255" data-aos-delay="1000"
-                class="text-name mt-5 text-center text-lg-start mx-xl-5 mt-lg-0 pb-1">Front-end Developer
-              </h1>
-              <blockquote data-aos="fade-left" data-aos-offset="230" data-aos-delay="1200"
-                class="blockquote text-dark px-xl-5">
-                <p class="quote">I have a
-                  strong passion for UI effects, animations, and creating intuitive, dynamic user experiences
-                  functionally. With Vanilla Javascript, I have built some web apps and websites which are fully
-                  responsive.</p>
-                <p class="quote look bg-light">Let's take
-                  a look! <span class="rarr">&rarr;</span></p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Skills -->
-    <section id="skills" class="pt-1 pt-sm-5">
-      <div class="container pb-5">
-        <h2 class="text-center text-dark display-4 mt-3 pt-3"><span class="text-name">Skills</span></h2>
-        <hr class="w-25 mx-auto mt-0 mb-lg-3">
-        <div class="row mb-md-5 pb-5 ">
-          <div class="col-12 col-lg-6 d-none d-lg-block">
-            <div data-aos="fade-down" data-aos-offset="350" data-aos-duration="850"
-              class="h-100 d-flex justify-content-start align-items-center pt-md-5"><img src="icons/certificate.svg"
-                alt="" class="w-90"></div>
-          </div>
-          <div class="col-12 col-lg-6 skills-responsive">
-            <div class="d-flex flex-column justify-content-center align-items-center h-100 pt-lg-5">
-              <!-- SkillsInfo -->
-              <h5 data-aos="fade-down" data-aos-offset="100" data-aos-delay="50" class="w-100 m-0 pb-1 mt-4">
-                <img src="/icons/html5.svg" class="w-3" alt=""> Html</h5>
-              <div data-aos="fade-down" data-aos-offset="70" data-aos-delay="50"
-                class="d-flex justify-content-between align-items-center w-100 skills-shadow">
-                <div class="w-100 h-50 h-responsive bg-pale"></div>
-                <div class="h-50 h-responsive w-10 d-flex justify-content-end align-items-center text-dark bg-skills px-0
-                  px-sm-2"><span class="percent">90%</span>
-                </div>
-              </div>
-              <h5 data-aos="fade-down" data-aos-delay="100" data-aos-offset="100" class="w-100 m-0 pb-1 mt-4"><img
-                  src="/icons/css3.svg" class="w-3" alt=""> Css</h5>
-              <div data-aos="fade-down" data-aos-delay="100" data-aos-offset="70"
-                class="d-flex justify-content-between align-items-center w-100 skills-shadow">
-                <div class="w-100 h-50 h-responsive bg-pale"></div>
-                <div class="h-50 h-responsive w-15 d-flex justify-content-end align-items-center text-dark bg-skills px-0
-                  px-sm-2"><span class="percent">85%</span>
-                </div>
-              </div>
-              <h5 data-aos="fade-down" data-aos-delay="150" data-aos-offset="100" class="w-100 m-0 pb-1 mt-4"><img
-                  src="/icons/javascript.svg" class="w-4" alt=""> Javascript
-              </h5>
-              <div data-aos="fade-down" data-aos-delay="150" data-aos-offset="70"
-                class="d-flex justify-content-between align-items-center w-100 skills-shadow">
-                <div class="w-100 h-50 h-responsive bg-pale"></div>
-                <div
-                  class="h-50 h-responsive w-15 d-flex justify-content-end align-items-center text-dark bg-skills px-0 px-sm-2">
-                  <span class="percent">85%</span></div>
-              </div>
-              <h5 data-aos="fade-down" data-aos-delay="200" data-aos-offset="100" class="w-100 m-0 pb-1 mt-4"><img
-                  src="/icons/sass.svg" class="w-4" alt=""> Sass</h5>
-              <div data-aos="fade-down" data-aos-delay="200" data-aos-offset="70"
-                class="d-flex justify-content-between align-items-center w-100 skills-shadow">
-                <div class="w-100 h-50 h-responsive bg-pale"></div>
-                <div
-                  class="h-50 h-responsive w-10 d-flex justify-content-end align-items-center text-dark bg-skills px-0 px-sm-2">
-                  <span class="percent">90%</span></div>
-              </div>
-              <h5 data-aos="fade-down" data-aos-delay="250" data-aos-offset="100" class="w-100 m-0 pb-1 mt-4"><img
-                  src="/icons/bootstrap5.svg" class="w-4" alt=""> Bootstrap
-              </h5>
-              <div data-aos="fade-down" data-aos-delay="250" data-aos-offset="70"
-                class="d-flex justify-content-between align-items-center w-100 skills-shadow">
-                <div class="w-100 h-50 h-responsive bg-pale"></div>
-                <div
-                  class="h-50 h-responsive w-10 d-flex justify-content-end align-items-center text-dark bg-skills px-0 px-sm-2">
-                  <span class="percent">90%</span></div>
-              </div>
-              <h5 data-aos="fade-down" data-aos-delay="300" data-aos-offset="100" class="w-100 m-0 pb-1 mt-4"><img
-                  src="/icons/git-icon.svg" class="w-4" alt=""> Git</h5>
-              <div data-aos="fade-down" data-aos-delay="300" data-aos-offset="70"
-                class="d-flex justify-content-between align-items-center w-100 skills-shadow">
-                <div class="w-100 h-50 h-responsive bg-pale"></div>
-                <div
-                  class="h-50 h-responsive w-15 d-flex justify-content-end align-items-center text-dark bg-skills px-0 px-sm-2">
-                  <span class="percent">85%</span></div>
-              </div>
-              <h5 data-aos="fade-down" data-aos-delay="350" data-aos-offset="100" class="w-100 m-0 pb-1 mt-4"><img
-                  src="/icons/react.svg" class="w-4" alt=""> React</h5>
-              <div data-aos="fade-down" data-aos-delay="350" data-aos-offset="70"
-                class="d-flex justify-content-between align-items-center w-100 skills-shadow">
-                <div class="w-75 progress-bar progress-bar-striped progress-bar-animated h-50 h-responsive bg-pale">
-                </div>
-                <div
-                  class="h-50 h-responsive w-100 d-flex justify-content-end align-items-center text-dark bg-skills px-0 px-sm-2">
-                  <span class="mx-auto pale py-1">Learning
-                    Process
-                  </span>
-                  <span class="percent">
-                    <div class="spinner-border spinner-border-sm" role="status">
-                      <span class="sr-only"></span>
-                    </div>
-                  </span>
-                </div>
-              </div>
-            </div>
+        <!-- Arrow-Down-Button -->
+        <div
+          class="
+            d-none d-md-block d-flex
+            justify-content-center
+            align-items-center
+            w-100
+          "
+        >
+          <div
+            class="
+              p-2
+              up-icon-width
+              from-top
+              rounded-circle
+              down-btn
+              arrow-up-position-ab
+            "
+          >
+            <img src="icons/arrow-down.svg" class="down-svg w-100" alt="" />
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Projects -->
-    <section id="projects" class="pt-1 pt-sm-5">
-      <div class="container pb-lg-2 my-3">
-        <h2 class="text-center text-dark display-4 mt-2"><span class="text-name">Projects</span></h2>
-        <hr class="w-25 mx-auto mt-0">
-        <div class="row px-2 px-lg-0 py-md-5 my-1">
-          <div data-aos="zoom-in" data-aos-offset="300" data-aos-delay="250" class="col-6 col-lg-4 mx-3 g-3 project">
-            <img src="img/tmdb-movies.png" class="w-100 details rounded m-3 mx-auto" alt="">
-            <div class="overlay text-center">
-              <h4 class="project-name">TMDB Movies</h4>
-              <p class="text-warning code">Javascript (API)</p>
-              <div>
-                <a href="https://zrrmovies.netlify.app/index.html" target="_blank">
-                  <button class="btn btn-sm project-btn mx-1">Live Demo</button></a>
-                <a href="https://github.com/zrruziev/TMDB-Movies" target="_blank">
-                  <button class="btn btn-sm project-btn">Github Repo</button></a>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-offset="300" class="col-6 col-lg-4 mx-3 g-3 project">
-            <img src="img/travel-agency.png" class="w-100 details rounded m-3 mx-auto" alt="">
-            <div class="overlay text-center">
-              <h4 class="project-name">BEST TOUR</h4>
-              <p class="text-warning code">CSS(Sass)</p>
-              <div>
-                <a href="https://besttravelandtour.netlify.app/" target="_blank">
-                  <button class="btn btn-sm project-btn mx-1">Live Demo</button></a>
-                <a href="https://github.com/zrruziev/Travel-Agency" target="_blank">
-                  <button class="btn btn-sm project-btn">Github Repo</button></a>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-offset="300" data-aos-delay="250" class="col-6 col-lg-4 mx-3 g-3 project">
-            <img src="img/bootcamp.png" class="w-100 details rounded m-3 mx-auto" alt="">
-            <div class="overlay text-center">
-              <h4 class="project-name">Bootcamp</h4>
-              <p class="text-warning code">Bootstrap 5</p>
-              <div>
-                <a href="https://fullstackbootcamp.netlify.app" target="_blank">
-                  <button class="btn btn-sm project-btn mx-1">Live Demo</button></a>
-                <a href="https://github.com/zrruziev/BootCamp" target="_blank">
-                  <button class="btn btn-sm project-btn">Github Repo</button></a>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="500" class="col-6 col-lg-4 mx-3 g-3 project">
-            <img src="img/calory-tracker.png" class="w-100 details rounded m-3 mx-auto" alt="">
-            <div class="overlay text-center">
-              <h4 class="project-name">Calory Tracker</h4>
-              <p class="text-warning code">Javascript</p>
-              <div>
-                <a href="https://calorytracker.netlify.app/" target="_blank">
-                  <button class="btn btn-sm project-btn mx-1">Live Demo</button></a>
-                <a href="https://github.com/zrruziev/Calory-Tracker" target="_blank">
-                  <button class="btn btn-sm project-btn">Github Repo</button></a>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="300" class="col-6 col-lg-4 mx-3 g-3 project">
-            <img src="img/github-user.png" class="w-100 details rounded m-3 mx-auto" alt="">
-            <div class="overlay text-center">
-              <h4 class="project-name">Github User</h4>
-              <p class="text-warning code">Javascript (API)</p>
-              <div>
-                <a href="https://zrruserfinder.netlify.app/" target="_blank">
-                  <button class="btn btn-sm project-btn mx-1">Live Demo</button></a>
-                <a href="https://github.com/zrruziev/GithubUserFinder" target="_blank">
-                  <button class="btn btn-sm project-btn">Github Repo</button></a>
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="500" class="col-6 col-lg-4 mx-3 g-3 project">
-            <img src="img/guess-number.png" class="w-100 details rounded m-3 mx-auto" alt="">
-            <div class="overlay text-center">
-              <h4 class="project-name">Guess a Number</h4>
-              <p class="text-warning code">Javascript</p>
-              <div class="buttons">
-                <a href="https://raqamtopish.netlify.app/" target="_blank" class="demo">
-                  <button class="btn btn-sm project-btn demo mx-1">Live Demo</button></a>
-                <a href="https://github.com/zrruziev/Guessing-Number" target="_blank">
-                  <button class="btn btn-sm project-btn github">Github Repo</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container py-5">
-        <h2 class="text-center text-dark display-4 mt-0 mt-sm-3"><span class="text-name">Contact</span></h2>
-        <hr class="w-25 mx-auto mt-0">
-        <div class="row pt-0 pt-sm-5">
-          <div data-aos="fade-right" data-aos-offset="400" class="d-none d-sm-block col-xl-6 col-xxl-5 contact-img">
-            <img src="icons/contact.svg" class="w-75 mailbox" alt="">
-          </div>
-          <div class="col-12 col-xl-6 col-xxl-7">
-            <form action="POST" data-netlify="true">
-              <div class="form-group pt-5 w-100 mx-auto">
-                <input data-aos="fade-left" data-aos-offset="355" class="form-control mb-3" type="text"
-                  placeholder="Name" name="name" id="name" required>
-                <input data-aos="fade-left" data-aos-offset="300" data-aos-delay="200" class="form-control mb-3"
-                  type="email" placeholder="Email" name="email" id="email" required>
-                <textarea data-aos="fade-left" data-aos-offset="245" data-aos-delay="350" class="form-control"
-                  name="message" id="message" placeholder="Type something here..." cols="30" rows="12"
-                  required></textarea>
-                <!-- <div>
-                  <div data-aos="fade-left" data-aos-offset="0" data-aos-delay="400" class="py-2"
-                    data-netlify-recaptcha="true"></div>
-                </div> -->
-                <div class="d-flex justify-content-end">
-                  <div data-aos="fade-left" data-aos-offset="0" data-aos-delay="450"
-                    class="w-100 pb-4 d-flex justify-content-center">
-                    <button type="submit" class="btn mt-3 btn-home submit-btn w-100 rounded-pill">Submit</button>
+      </section>
+      <!-- About -->
+      <section id="about" class="pt-1 pt-sm-5 pb-3">
+        <div class="container pb-0 pb-lg-5">
+          <h2 class="text-center text-dark display-4 mt-3">
+            <span class="text-name">About</span>
+          </h2>
+          <hr class="w-25 mx-auto mt-0" />
+          <div class="pt-0 pt-sm-4 special-size">
+            <div class="p-2">
+              <div class="row icons">
+                <div class="col-6 col-md-3 text-center services py-0 pt-3">
+                  <img
+                    data-aos="zoom-in"
+                    data-aos-offset="148"
+                    src="icons/cellphone-link.svg"
+                    class="w-50 mb-2 bg-icon p-5 rounded-circle"
+                    alt=""
+                  />
+                  <div data-aos="fade" data-aos-offset="100">
+                    <h3 class="icon-name">Responsive</h3>
+                    <p class="w-100 icon-text text-dark mx-auto">
+                      My layouts will work on any device, big or small.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 text-center services py-0 pt-3">
+                  <img
+                    data-aos="zoom-in"
+                    data-aos-offset="148"
+                    data-aos-delay="150"
+                    class="w-50 mb-2 bg-icon p-5 rounded-circle"
+                    src="icons/speedometer.svg"
+                    alt=""
+                  />
+                  <div
+                    data-aos="fade"
+                    data-aos-delay="200"
+                    data-aos-offset="100"
+                  >
+                    <h3 class="icon-name">Fast Loading</h3>
+                    <p class="w-100 icon-text text-dark mx-auto">
+                      Fast load times and lag free interaction, my highest
+                      priority.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 text-center services py-0 pt-sm-3">
+                  <img
+                    data-aos="zoom-in"
+                    data-aos-offset="148"
+                    data-aos-delay="300"
+                    src="icons/lightbulb-on-outline.svg"
+                    class="w-50 mb-2 bg-icon p-5 rounded-circle"
+                    alt=""
+                  />
+                  <div
+                    data-aos="fade"
+                    data-aos-offset="100"
+                    data-aos-delay="400"
+                  >
+                    <h3 class="icon-name">Intuitive</h3>
+                    <p class="w-100 icon-text text-dark mx-auto">
+                      Strong preference for easy to use, intuitive UX/UI.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 text-center services py-0 pt-sm-3">
+                  <img
+                    data-aos="zoom-in"
+                    data-aos-offset="148"
+                    data-aos-delay="450"
+                    class="w-50 mb-2 bg-icon p-5 rounded-circle"
+                    src="icons/rocket-launch-outline.svg"
+                    alt=""
+                  />
+                  <div
+                    data-aos="fade"
+                    data-aos-offset="100"
+                    data-aos-delay="600"
+                  >
+                    <h3 class="icon-name">Dynamic</h3>
+                    <p class="w-100 icon-text text-dark mx-auto">
+                      Websites don't have to be static, I love making pages come
+                      to life.
+                    </p>
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
+          </div>
+          <div class="row pt-3 pt-lg-4 mb-5">
+            <div class="col-12 col-md-6 col-xl-5 d-flex justify-content-end">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                data-aos-offset="290"
+                class="my-photo"
+              ></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-7">
+              <div class="pt-lg-3 mt-4 w-100 mx-auto pr-5 with-tablet">
+                <h1
+                  data-aos="fade-left"
+                  data-aos-offset="255"
+                  data-aos-delay="1000"
+                  class="
+                    text-name
+                    mt-5
+                    text-center text-lg-start
+                    mx-xl-5
+                    mt-lg-0
+                    pb-1
+                  "
+                >
+                  Front-end Developer
+                </h1>
+                <blockquote
+                  data-aos="fade-left"
+                  data-aos-offset="230"
+                  data-aos-delay="1200"
+                  class="blockquote text-dark px-xl-5"
+                >
+                  <p class="quote">
+                    I have a strong passion for UI effects, animations, and
+                    creating intuitive, dynamic user experiences functionally.
+                    With Vanilla Javascript, I have built some web apps and
+                    websites which are fully responsive.
+                  </p>
+                  <p class="quote look bg-light">
+                    Let's take a look! <span class="rarr">&rarr;</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Arrow-Up-Button -->
-      <div class="d-none d-sm-block d-flex w-100 justify-content-end arrow-up-position">
-        <div class="p-2 up-icon-width rounded-circle arrow-up-position-ab">
-          <img src="icons/arrow-up-.svg" class="up-svg w-100" alt="">
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="pt-1 pt-sm-5">
+        <div class="container pb-5">
+          <h2 class="text-center text-dark display-4 mt-3 pt-3">
+            <span class="text-name">Skills</span>
+          </h2>
+          <hr class="w-25 mx-auto mt-0 mb-lg-3" />
+          <div class="row mb-md-5 pb-5">
+            <div class="col-12 col-lg-6 d-none d-lg-block">
+              <div
+                data-aos="fade-down"
+                data-aos-offset="350"
+                data-aos-duration="850"
+                class="
+                  h-100
+                  d-flex
+                  justify-content-start
+                  align-items-center
+                  pt-md-5
+                "
+              >
+                <img src="icons/certificate.svg" alt="" class="w-90" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 skills-responsive">
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                  h-100
+                  pt-lg-5
+                "
+              >
+                <!-- SkillsInfo -->
+                <h5
+                  data-aos="fade-down"
+                  data-aos-offset="100"
+                  data-aos-delay="50"
+                  class="w-100 m-0 pb-1 mt-4"
+                >
+                  <img src="/icons/html5.svg" class="w-3" alt="" /> Html
+                </h5>
+                <div
+                  data-aos="fade-down"
+                  data-aos-offset="70"
+                  data-aos-delay="50"
+                  class="
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    w-100
+                    skills-shadow
+                  "
+                >
+                  <div class="w-100 h-50 h-responsive bg-pale"></div>
+                  <div
+                    class="
+                      h-50 h-responsive
+                      w-10
+                      d-flex
+                      justify-content-end
+                      align-items-center
+                      text-dark
+                      bg-skills
+                      px-0 px-sm-2
+                    "
+                  >
+                    <span class="percent">90%</span>
+                  </div>
+                </div>
+                <h5
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                  data-aos-offset="100"
+                  class="w-100 m-0 pb-1 mt-4"
+                >
+                  <img src="/icons/css3.svg" class="w-3" alt="" /> Css
+                </h5>
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                  data-aos-offset="70"
+                  class="
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    w-100
+                    skills-shadow
+                  "
+                >
+                  <div class="w-100 h-50 h-responsive bg-pale"></div>
+                  <div
+                    class="
+                      h-50 h-responsive
+                      w-15
+                      d-flex
+                      justify-content-end
+                      align-items-center
+                      text-dark
+                      bg-skills
+                      px-0 px-sm-2
+                    "
+                  >
+                    <span class="percent">85%</span>
+                  </div>
+                </div>
+                <h5
+                  data-aos="fade-down"
+                  data-aos-delay="150"
+                  data-aos-offset="100"
+                  class="w-100 m-0 pb-1 mt-4"
+                >
+                  <img src="/icons/javascript.svg" class="w-4" alt="" />
+                  Javascript
+                </h5>
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay="150"
+                  data-aos-offset="70"
+                  class="
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    w-100
+                    skills-shadow
+                  "
+                >
+                  <div class="w-100 h-50 h-responsive bg-pale"></div>
+                  <div
+                    class="
+                      h-50 h-responsive
+                      w-15
+                      d-flex
+                      justify-content-end
+                      align-items-center
+                      text-dark
+                      bg-skills
+                      px-0 px-sm-2
+                    "
+                  >
+                    <span class="percent">85%</span>
+                  </div>
+                </div>
+                <h5
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                  data-aos-offset="100"
+                  class="w-100 m-0 pb-1 mt-4"
+                >
+                  <img src="/icons/sass.svg" class="w-4" alt="" /> Sass
+                </h5>
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                  data-aos-offset="70"
+                  class="
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    w-100
+                    skills-shadow
+                  "
+                >
+                  <div class="w-100 h-50 h-responsive bg-pale"></div>
+                  <div
+                    class="
+                      h-50 h-responsive
+                      w-10
+                      d-flex
+                      justify-content-end
+                      align-items-center
+                      text-dark
+                      bg-skills
+                      px-0 px-sm-2
+                    "
+                  >
+                    <span class="percent">90%</span>
+                  </div>
+                </div>
+                <h5
+                  data-aos="fade-down"
+                  data-aos-delay="250"
+                  data-aos-offset="100"
+                  class="w-100 m-0 pb-1 mt-4"
+                >
+                  <img src="/icons/bootstrap5.svg" class="w-4" alt="" />
+                  Bootstrap
+                </h5>
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay="250"
+                  data-aos-offset="70"
+                  class="
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    w-100
+                    skills-shadow
+                  "
+                >
+                  <div class="w-100 h-50 h-responsive bg-pale"></div>
+                  <div
+                    class="
+                      h-50 h-responsive
+                      w-10
+                      d-flex
+                      justify-content-end
+                      align-items-center
+                      text-dark
+                      bg-skills
+                      px-0 px-sm-2
+                    "
+                  >
+                    <span class="percent">90%</span>
+                  </div>
+                </div>
+                <h5
+                  data-aos="fade-down"
+                  data-aos-delay="300"
+                  data-aos-offset="100"
+                  class="w-100 m-0 pb-1 mt-4"
+                >
+                  <img src="/icons/git-icon.svg" class="w-4" alt="" /> Git
+                </h5>
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay="300"
+                  data-aos-offset="70"
+                  class="
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    w-100
+                    skills-shadow
+                  "
+                >
+                  <div class="w-100 h-50 h-responsive bg-pale"></div>
+                  <div
+                    class="
+                      h-50 h-responsive
+                      w-15
+                      d-flex
+                      justify-content-end
+                      align-items-center
+                      text-dark
+                      bg-skills
+                      px-0 px-sm-2
+                    "
+                  >
+                    <span class="percent">85%</span>
+                  </div>
+                </div>
+                <h5
+                  data-aos="fade-down"
+                  data-aos-delay="350"
+                  data-aos-offset="100"
+                  class="w-100 m-0 pb-1 mt-4"
+                >
+                  <img src="/icons/react.svg" class="w-4" alt="" /> React
+                </h5>
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay="350"
+                  data-aos-offset="70"
+                  class="
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    w-100
+                    skills-shadow
+                  "
+                >
+                  <div
+                    class="
+                      w-75
+                      progress-bar progress-bar-striped progress-bar-animated
+                      h-50 h-responsive
+                      bg-pale
+                    "
+                  ></div>
+                  <div
+                    class="
+                      h-50 h-responsive
+                      w-100
+                      d-flex
+                      justify-content-end
+                      align-items-center
+                      text-dark
+                      bg-skills
+                      px-0 px-sm-2
+                    "
+                  >
+                    <span class="mx-auto pale py-1">Learning Process </span>
+                    <span class="percent">
+                      <div
+                        class="spinner-border spinner-border-sm"
+                        role="status"
+                      >
+                        <span class="sr-only"></span>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Contact Links -->
-      <div class="w-20 mx-auto py-2 d-flex contact-icons">
-        <div class="d-flex">
-          <a class="mx-3 rounded-circle contact-icon" target="_blank"
-            href="https://www.facebook.com/zukhriddin.ruziev/"><img class="w-100" src="icons/facebook.svg" alt=""></a>
-          <a class="contact-icon mx-3 rounded" target="_blank"
-            href="https://www.linkedin.com/in/zukhriddin-ruziev-352603205/"><img class="w-100" src="icons/linkedin.svg"
-              alt=""></a>
-          <a class="mx-3 bg-light rounded-circle contact-icon" target="_blank" href="https://github.com/zrruziev"><img
-              class="w-100" src="icons/github.svg" alt=""></a>
-          <a class="mx-3 rounded-circle contact-icon" target="_blank" href="https://t.me/zrruziev"><img class="w-100"
-              src="icons/telegram.svg" alt=""></a>
-          <a class="mx-3 rounded-i contact-icon" target="_blank" href="https://www.instagram.com/zrruziev/"><img
-              class="w-100" src="icons/instagram.svg" alt=""></a>
+      </section>
+      <!-- Projects -->
+      <section id="projects" class="pt-1 pt-sm-5">
+        <div class="container pb-lg-2 my-3">
+          <h2 class="text-center text-dark display-4 mt-2">
+            <span class="text-name">Projects</span>
+          </h2>
+          <hr class="w-25 mx-auto mt-0" />
+          <div class="row px-2 px-lg-0 py-md-5 my-1">
+            <div
+              data-aos="zoom-in"
+              data-aos-offset="300"
+              data-aos-delay="250"
+              class="col-6 col-lg-4 mx-3 g-3 project"
+            >
+              <img
+                src="img/tmdb-movies.png"
+                class="w-100 details rounded m-3 mx-auto"
+                alt=""
+              />
+              <div class="overlay text-center">
+                <h4 class="project-name">TMDB Movies</h4>
+                <p class="text-warning code">Javascript (API)</p>
+                <div>
+                  <a href="https://zrrmovies.netlify.app" target="_blank">
+                    <button class="btn btn-sm project-btn mx-1">
+                      Live Demo
+                    </button></a
+                  >
+                  <a
+                    href="https://github.com/zrruziev/TMDB-Movies"
+                    target="_blank"
+                  >
+                    <button class="btn btn-sm project-btn">
+                      Github Repo
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-offset="300"
+              class="col-6 col-lg-4 mx-3 g-3 project"
+            >
+              <img
+                src="img/travel-agency.png"
+                class="w-100 details rounded m-3 mx-auto"
+                alt=""
+              />
+              <div class="overlay text-center">
+                <h4 class="project-name">BEST TOUR</h4>
+                <p class="text-warning code">CSS(Sass)</p>
+                <div>
+                  <a
+                    href="https://besttravelandtour.netlify.app"
+                    target="_blank"
+                  >
+                    <button class="btn btn-sm project-btn mx-1">
+                      Live Demo
+                    </button></a
+                  >
+                  <a
+                    href="https://github.com/zrruziev/Travel-Agency"
+                    target="_blank"
+                  >
+                    <button class="btn btn-sm project-btn">
+                      Github Repo
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-offset="300"
+              data-aos-delay="250"
+              class="col-6 col-lg-4 mx-3 g-3 project"
+            >
+              <img
+                src="img/bootcamp.png"
+                class="w-100 details rounded m-3 mx-auto"
+                alt=""
+              />
+              <div class="overlay text-center">
+                <h4 class="project-name">Bootcamp</h4>
+                <p class="text-warning code">Bootstrap 5</p>
+                <div>
+                  <a
+                    href="https://fullstackbootcamp.netlify.app"
+                    target="_blank"
+                  >
+                    <button class="btn btn-sm project-btn mx-1">
+                      Live Demo
+                    </button></a
+                  >
+                  <a
+                    href="https://github.com/zrruziev/BootCamp"
+                    target="_blank"
+                  >
+                    <button class="btn btn-sm project-btn">
+                      Github Repo
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="500"
+              class="col-6 col-lg-4 mx-3 g-3 project"
+            >
+              <img
+                src="img/calory-tracker.png"
+                class="w-100 details rounded m-3 mx-auto"
+                alt=""
+              />
+              <div class="overlay text-center">
+                <h4 class="project-name">Calory Tracker</h4>
+                <p class="text-warning code">Javascript</p>
+                <div>
+                  <a href="https://calorytracker.netlify.app" target="_blank">
+                    <button class="btn btn-sm project-btn mx-1">
+                      Live Demo
+                    </button></a
+                  >
+                  <a
+                    href="https://github.com/zrruziev/Calory-Tracker"
+                    target="_blank"
+                  >
+                    <button class="btn btn-sm project-btn">
+                      Github Repo
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="300"
+              class="col-6 col-lg-4 mx-3 g-3 project"
+            >
+              <img
+                src="img/github-user.png"
+                class="w-100 details rounded m-3 mx-auto"
+                alt=""
+              />
+              <div class="overlay text-center">
+                <h4 class="project-name">Github User</h4>
+                <p class="text-warning code">Javascript (API)</p>
+                <div>
+                  <a href="https://zrruserfinder.netlify.app" target="_blank">
+                    <button class="btn btn-sm project-btn mx-1">
+                      Live Demo
+                    </button></a
+                  >
+                  <a
+                    href="https://github.com/zrruziev/GithubUserFinder"
+                    target="_blank"
+                  >
+                    <button class="btn btn-sm project-btn">
+                      Github Repo
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="500"
+              class="col-6 col-lg-4 mx-3 g-3 project"
+            >
+              <img
+                src="img/guess-number.png"
+                class="w-100 details rounded m-3 mx-auto"
+                alt=""
+              />
+              <div class="overlay text-center">
+                <h4 class="project-name">Guess a Number</h4>
+                <p class="text-warning code">Javascript</p>
+                <div class="buttons">
+                  <a
+                    href="https://raqamtopish.netlify.app"
+                    target="_blank"
+                    class="demo"
+                  >
+                    <button class="btn btn-sm project-btn demo mx-1">
+                      Live Demo
+                    </button></a
+                  >
+                  <a
+                    href="https://github.com/zrruziev/Guessing-Number"
+                    target="_blank"
+                  >
+                    <button class="btn btn-sm project-btn github">
+                      Github Repo
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Footer -->
-      <footer class="footer text-center">
-        <div class="container p-4">
-          <p class="text mb-0">Copyright &copy; <span class="year"></span> <span class="dev-text">Developer</span> . All
-            Rights Reserved
-          </p>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container py-5">
+          <h2 class="text-center text-dark display-4 mt-0 mt-sm-3">
+            <span class="text-name">Contact</span>
+          </h2>
+          <hr class="w-25 mx-auto mt-0" />
+          <div class="row pt-0 pt-sm-5">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="400"
+              class="d-none d-sm-block col-xl-6 col-xxl-5 contact-img"
+            >
+              <img src="icons/contact.svg" class="w-75 mailbox" alt="" />
+            </div>
+            <div class="col-12 col-xl-6 col-xxl-7">
+              <form action="POST" data-netlify="true">
+                <div class="form-group pt-5 w-100 mx-auto">
+                  <input
+                    data-aos="fade-left"
+                    data-aos-offset="355"
+                    class="form-control mb-3"
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    id="name"
+                    required
+                  />
+                  <input
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-delay="200"
+                    class="form-control mb-3"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                  <textarea
+                    data-aos="fade-left"
+                    data-aos-offset="245"
+                    data-aos-delay="350"
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    placeholder="Type something here..."
+                    cols="30"
+                    rows="12"
+                    required
+                  ></textarea>
+                  <!-- <div>
+                  <div data-aos="fade-left" data-aos-offset="0" data-aos-delay="400" class="py-2"
+                    data-netlify-recaptcha="true"></div>
+                </div> -->
+                  <div class="d-flex justify-content-end">
+                    <div
+                      data-aos="fade-left"
+                      data-aos-offset="0"
+                      data-aos-delay="450"
+                      class="w-100 pb-4 d-flex justify-content-center"
+                    >
+                      <button
+                        type="submit"
+                        class="btn mt-3 btn-home submit-btn w-100 rounded-pill"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-      </footer>
-    </section>
-  </main>
+        <!-- Arrow-Up-Button -->
+        <div
+          class="
+            d-none d-sm-block d-flex
+            w-100
+            justify-content-end
+            arrow-up-position
+          "
+        >
+          <div class="p-2 up-icon-width rounded-circle arrow-up-position-ab">
+            <img src="icons/arrow-up-.svg" class="up-svg w-100" alt="" />
+          </div>
+        </div>
+        <!-- Contact Links -->
+        <div class="w-20 mx-auto py-2 d-flex contact-icons">
+          <div class="d-flex">
+            <a
+              class="mx-3 rounded-circle contact-icon"
+              target="_blank"
+              href="https://www.facebook.com/zukhriddin.ruziev/"
+              ><img class="w-100" src="icons/facebook.svg" alt=""
+            /></a>
+            <a
+              class="contact-icon mx-3 rounded"
+              target="_blank"
+              href="https://www.linkedin.com/in/zukhriddin-ruziev-352603205/"
+              ><img class="w-100" src="icons/linkedin.svg" alt=""
+            /></a>
+            <a
+              class="mx-3 bg-light rounded-circle contact-icon"
+              target="_blank"
+              href="https://github.com/zrruziev"
+              ><img class="w-100" src="icons/github.svg" alt=""
+            /></a>
+            <a
+              class="mx-3 rounded-circle contact-icon"
+              target="_blank"
+              href="https://t.me/zrruziev"
+              ><img class="w-100" src="icons/telegram.svg" alt=""
+            /></a>
+            <a
+              class="mx-3 rounded-i contact-icon"
+              target="_blank"
+              href="https://www.instagram.com/zrruziev/"
+              ><img class="w-100" src="icons/instagram.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer text-center">
+          <div class="container p-4">
+            <p class="text mb-0">
+              Copyright &copy; <span class="year"></span>
+              <span class="dev-text">Developer</span> . All Rights Reserved
+            </p>
+          </div>
+        </footer>
+      </section>
+    </main>
 
-  <!-- PopUp For Mobile -->
-  <div class="desktop">
-    <div class="w-100 desktop-in h-100 d-flex flex-column justify-content-center align-items-center">
-      <!-- Preloader -->
-      <div class="lds-roller">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- PopUp For Mobile -->
+    <div class="desktop">
+      <div
+        class="
+          w-100
+          desktop-in
+          h-100
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+        "
+      >
+        <!-- Preloader -->
+        <div class="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="app.js" defer></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="app.js" defer></script>
+  </body>
 </html>
