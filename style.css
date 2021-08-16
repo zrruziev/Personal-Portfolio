@@ -4,6 +4,9 @@
     sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
 /* PreLoader */
 .lds-roller {
   display: inline-block;
